@@ -1,0 +1,78 @@
+/* El documento abarca toda la altura */
+
+body, html{
+    height: 100%;
+}
+
+/* Estilos del body */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #2F3542;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Estilos del form box */
+
+.form-box{
+    width: 300px;
+    height: 400px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+}
+
+/* Estilos del título */
+
+.form-title{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Estilos a las cajas de texto y al botón */
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #3742FA;
+    width: 200px;
+    outline: none;
+    color: #FFFFFF;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+/* Animación a las cajas de texto cuando se pone el cursor encima */
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    width: 280px;
+    border-color: #FFFFFF;
+}
+
+/* Animación al botón cuando se pone el cursor encima*/
+
+.form-box button[type="submit"]{
+    border: 0;
+    background: #5352ED;
+    cursor: pointer;
+    border: 2px solid #3742FA
+}
+
+/* Cambia el fondo del botón cuando se le pone el botón encima*/
+
+.form-box button[type="submit"]:hover{
+    background: none;
+}
